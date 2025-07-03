@@ -53,21 +53,21 @@ All components are implemented in Python and orchestrated through a central Foun
    pip install -r requirements.txt
    ```
 
+   Note: Use right now I'm using azure-ai-projects==1.0.0b12 earlier versions had bug realted to authentification.
+
 4. **Environment variables**:
 
    * Copy `.env.example` to `.env` (not committed to Git).
 
-   * Populate with your credentials and endpoints:
-
-     ```ini
-     AZURE_CLIENT_ID=<your-client-id>
-     AZURE_TENANT_ID=<your-tenant-id>
-     AZURE_CLIENT_SECRET=<your-client-secret>
-     AI_FOUNDRY_ENDPOINT=https://<your-resource-name>.openai.azure.com
-     ```
+   * Populate with your credentials and endpoints.
 
    * The `.env` file is loaded at runtime and **should never** be checked into Git.
 
+5. **Validate Authentification**:
+
+    * Run `az login` and log into your Azure account.
+
+    * Launch the script at `utils/auth_test.py` and verify you can create and delete an agent.
 ---
 
 ## Agents Architecture

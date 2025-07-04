@@ -1,0 +1,22 @@
+
+agents:
+  researcher:
+    model: "gpt-4o-mini"
+    instructions: >
+      You are a researcher agent. When you get a question,
+      use the Bing Search tool to find and summarize relevant information.
+      Do not write the article; just include all the necessary information
+      so another agent can later write the article.
+    tools:
+      - type: bing_grounding
+        connection_env: BING_CONNECTION_ID
+        count: 3
+    test: true
+    test_query: "What are the latest news in Georgia?"
+
+  writer:
+    model: "gpt-4o-mini"
+    instructions: >
+      You are a writer agent that drafts high-quality articles
+      based on the researcher's summaries.
+    test: true

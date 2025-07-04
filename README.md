@@ -51,6 +51,7 @@ All components are implemented in Python and orchestrated through a central Foun
 
    ```bash
    pip install -r requirements.txt
+   pip install -e .
    ```
 
    Note: Use right now I'm using azure-ai-projects==1.0.0b12 earlier versions had bug realted to authentification.

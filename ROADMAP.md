@@ -13,20 +13,26 @@ Before coding, ensure familiarity with Azure AI Foundry's Python interface for m
   * Verify authentication and connectivity via sample Foundry client calls.
 
 
-* **M2: Model Generation**
+* **M2: Model Generation** ✅
 
   * Define and deploy LLM resources in Foundry via Python API.
   * Implement `writer.py` with direct Foundry model instantiation.
 
-* **M3: Search Integration**
+* **M3: Search Integration** ✅
 
   * Leverage Foundry search primitives in `researcher.py` for Bing queries.
   * Add result caching and pagination handling.
 
-* **M4: Orchestrator Development**
+* **M4: Orchestrator Development** ✅
 
-  * Build `orchestrator.py` using Foundry pipeline constructs.
+  * Build `orchestrator_basic.py` using Foundry pipeline constructs.
   * Coordinate agent steps, handle retries and error states.
+
+* **M4.5: Orchestrator Development Semantic Kernel** ✅
+
+  * Introduce semantic kernel for orchestration.
+  * Create wrappers and utils to better create agents usable with Semantic Kernel.
+  * Compare both SM with basic one.
 
 * **M5: Intelligent Review**
 

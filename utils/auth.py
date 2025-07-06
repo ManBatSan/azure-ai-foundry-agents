@@ -4,12 +4,13 @@ from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
 from dotenv import load_dotenv
 
+load_dotenv(override=True)
+
 
 def get_client() -> AIProjectClient:
     """
     Authenticate and return an Azure AI Foundry project client.
     """
-    load_dotenv(override=True)
 
     endpoint = os.getenv("AI_FOUNDRY_ENDPOINT")
     subscription_id = os.getenv("SUBSCRIPTON_ID")

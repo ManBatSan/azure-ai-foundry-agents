@@ -13,10 +13,13 @@ agents:
         count: 3
     test: true
     test_query: "What are the latest news in Georgia?"
+    overwrite: true
 
   writer:
     model: "gpt-4o-mini"
     instructions: >
       You are a writer agent that drafts high-quality articles
       based on the researcher's summaries.
-    test: true
+    test: false
+    test_query: "What are the latest news in Georgia?"
+    overwrite: true

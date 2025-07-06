@@ -1,5 +1,7 @@
 azure-ai-projects==1.0.0b12
 azure-identity
 
+semantic_kernel
+
 python-dotenv
 pyyaml

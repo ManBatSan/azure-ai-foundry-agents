@@ -43,7 +43,7 @@ All components are implemented in Python and orchestrated through a central Foun
 2. **Create & activate a Conda environment**:
 
    ```bash
-   conda create -n ai-foundry python=3.9 -y
+   conda create -n ai-foundry python=3.11 -y
    conda activate ai-foundry
    ```
 
